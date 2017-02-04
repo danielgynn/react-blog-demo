@@ -1,4 +1,7 @@
 import React from 'react';
+
+// components
+import NavigationBar from './components/NavigationBar.jsx';
 import HeaderMessage from './components/HeaderMessage.jsx';
 
 const appData = {
@@ -9,9 +12,12 @@ const appData = {
 export default class App extends React.Component {
   render() {
     return (
-      <main>
-        <HeaderMessage data={appData} />
-      </main>
+      <div>
+        <NavigationBar data={appData} />
+        <main>
+          <HeaderMessage data={appData} />
+        </main>
+      </div>
     )
   }
 }

@@ -2,3 +2,9 @@ html,
 body {
   margin: 0;
 }
+
+main {
+  color: $color-black;
+  background-color: $color-white;
+  margin: 0 10rem;
+}
