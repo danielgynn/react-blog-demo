@@ -4,18 +4,13 @@ import React from 'react';
 import NavigationBar from './components/NavigationBar.jsx';
 import HeaderMessage from './components/HeaderMessage.jsx';
 
-const appData = {
-  title: 'React Blog Demo',
-  subtitle: 'A simple modern development environment, built with React, Babel and Webpack. ⚛️✨🚀'
-}
-
 export default class App extends React.Component {
   render() {
     return (
       <div>
-        <NavigationBar data={appData} />
+        <NavigationBar data={this.props.data} />
         <main>
-          <HeaderMessage data={appData} />
+          <HeaderMessage data={this.props.data} />
         </main>
       </div>
     )
