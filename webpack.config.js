@@ -1,7 +1,15 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackConfig = new HtmlWebpackPlugin({
+  template: './index.html',
+  filename: 'index.html',
+  inject: 'body'
+});
+
 module.exports = {
-  entry: './app/index.js',
+  context: __dirname + '/app',
+  entry: './index.js',
   output: {
-    path: './build',
+    path: __dirname + '/build',
     filename: 'bundle.js'
   },
   module: {
@@ -10,4 +18,5 @@ module.exports = {
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ }
     ]
   },
+  plugins: [HtmlWebpackConfig]
 }

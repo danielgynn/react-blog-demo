@@ -4,7 +4,11 @@
   "main": "index.js",
   "author": "danielgynn",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
   "dependencies": {
+    "html-webpack-plugin": "^2.28.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
   },
