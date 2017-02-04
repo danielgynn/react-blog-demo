@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "danielgynn",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
 }
